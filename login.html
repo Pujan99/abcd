@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto|Ubuntu&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<style type="text/css">
+		.mainForm{
+			width: 23%;
+			position: absolute;
+			left: 60%;
+			top: 28%;
+			border-radius: 5%;
+		}
+		.mainForm label{
+			font-weight: bolder;
+		}
+		.loginForm input[type=text],input[type=password]{
+			border: 0;
+			border-radius: 0px;
+			border-bottom: 1px solid #000;
+		}
+		.loginForm input:focus{
+			box-shadow: none;
+		}
+		.blueBox{
+			/*margin: 1.5%;*/
+			background-color: #0090FF; /*#2F80ED*/
+			width: 72%;
+			height: 100vh;  /* 93vh  */
+			/*border-radius: 10px;*/
+		}
+		.text1{
+			font-size: 3em;
+			position: absolute;
+			top: 8%;
+			left: 8%;
+			color: #fff;
+			font-family: 'Ubuntu';
+			font-weight: bold;
+		}
+		.text2{
+			width: 35%;
+			font-size: 1em;
+			position: absolute;
+			top: 30%;
+			left: 8%;
+			color: #fff;
+			font-family: 'Raleway';
+		}
+		.mainForm .btn{
+			margin-top: -20%;
+		}
+		.mainForm .newAccount{
+			margin-top: -5%;
+		}
+		.newAccount{
+			margin-top: 5%;
+		}
+		.newAccount a{
+			text-decoration: none;
+		}
+		.btn{
+			background-color: #0090FF;
+			color: #fff;
+			width: 55%;
+		}
+		.btn:hover{
+			color: #fff;
+		}
+		.icons{
+			position: absolute;
+			top: 86%;
+			left: 8%;
+			letter-spacing: 10px;
+			font-size: 2em;
+		}
+		.icons a{
+			text-decoration: none;
+			color: #fff;
+		}
+
+		@media(max-width: 720px){
+
+			.blueBox{
+				background-color: #0090FF; /*#2F80ED*/
+				width: 72%;
+				height: 93vh;   /*  100vh   */
+			}
+			.text1{
+				top: 2%;
+				font-size: 1.2em;
+				color: #fff;
+				font-family: 'Ubuntu';
+				font-weight: bold;
+			}
+			.text2{
+				width: 60%;
+				top: 11%;
+				font-size: 0.8em;
+				color: #fff;
+				font-family: 'Raleway';
+			}
+			.mainForm{
+				height: auto;
+				width: 85%;
+				left: 7.5%;
+				top: 36%;
+				border-radius: 5%;
+			}
+			.mainForm .btn{
+				margin-top: -30%;
+			}
+			.mainForm .newAccount{
+				margin-top: -11%;
+			}
+			.icons{
+				top: 92%;
+				left: 8%;
+				letter-spacing: 10px;
+				font-size: 1.3em;
+			}
+			.mainForm label{
+				font-weight: normal;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<!--  Container Starts   -->
+	<div class="containe">
+
+		<!--  Blue Box Starts   -->
+		<div class="blueBox">
+			<p class="text1">Making Health <br> Care Better Together</p>
+			<p class="text2">To enjoy good health, to bring true happiness to one's family, to bring peace to all, one must first discipline and control one's own mind. If a man can control his mind he can find the way to Enlightenment, and all wisdom and virtue will naturally come to him.</p>
+
+			<div class="icons">
+				<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter-square"></i></a>
+				<a href="https://www.google.com/gmail/" target="_blank"><i class="far fa-envelope"></i></a>
+				<a href="https://www.linkedin.com/uas/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+			</div>
+		</div>
+		<!--  Blue Box Ends   -->
+
+
+		<!--  Card Starts   -->
+		<div class="card mainForm shadow p-3 mb-5 rounded">
+			<div class="card-body">
+				<form class="loginForm">
+					<div class="form-group">
+						<label>Username</label>
+						<input type="text" class="form-control" name="name" id="name">
+					</div>
+					<div class="form-group">
+						<label>Password</label>
+						<input type="password" class="form-control" name="pwd" id="pwd">
+					</div>
+					<br><br>
+					<div class="form-group text-center">
+						<input type="submit" value="Login" class="btn" name="btn" id="btn">
+						<p class="newAccount">Don't have an account? <a href="signup.html"> Sign up</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--  Card Ends   -->
+
+		
+
+
+	</div>
+	<!--  Container Ends   -->
+
+</body>
+</html>
